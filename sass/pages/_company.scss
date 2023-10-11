@@ -1,0 +1,88 @@
+main {
+  background-color: $color-bg;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 47px;
+}
+#item {
+  background-image: url(../../images/company-item.png);
+}
+
+.type__company {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  .type__h {
+    h1 {
+      font-family: $rubik;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      color: $color-black-grey;
+    }
+    p {
+      font-family: $rubik;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      color: $color-primary;
+    }
+  }
+  .type__img {
+    background-image: url(../../images/company-background.png);
+  }
+  @media (max-width: 1130px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 12px;
+  }
+}
+
+.father__type {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 120px;
+  .type__one {
+    display: flex;
+    gap: 10px;
+    p {
+      font-family: $rubik;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      color: $color-black-grey;
+    }
+    h2 {
+      font-family: $rubik;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; 
+      color: $color-black-grey
+    }
+  }
+  @media (max-width:1160px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.img {
+  padding-top: 101px;
+  align-items: center;
+  padding-left: 12px;
+  @media (max-width: 995px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    padding: 0 12px 0 500px;
+    padding-left: 12px;
+
+  }
+}

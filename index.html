@@ -8,7 +8,18 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/global.min.css">
 </head>
-
+<style>
+  body {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  </style>
 <body>
   <header>
     <div class="nav">
@@ -44,18 +55,18 @@
         </div>
         <div class="nav__alex">
           <img src="images/bottom men.png" alt="">
-          <p>Алексей</p>
+          <a href="login.html">Алексей</a>
           <a href=""><img src="images/chevron-down.png" alt=""></a>
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section ction id="book">
+<section ction id="book">
       <div class="container">
         <div class="book__bg_img">
           <img class="book__img" src="images/fruits.png" alt="">
-          <h1>
+          <h1> 
             Доставка бесплатно от 1000 ₽
           </h1>
         </div>
@@ -403,8 +414,13 @@
         </div>
       </div>
     </section>
+    <section id="products">
+      <div class="container">
+        <div class="products-row"></div>
+      </div>
+    </section>
   </main>
-  <footer id="footer">
+<footer id="footer">
     <div class="container">
       <div class="foot__group">
         <div class="foot__father">
@@ -435,6 +451,15 @@
       </div>
     </div>
   </footer>
+  <script src="./JS/script.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/home.js"></script>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
 
 </html>
